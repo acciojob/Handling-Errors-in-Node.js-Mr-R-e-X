@@ -12,8 +12,8 @@ function printFileContents(filePath) {
 }
 
 // TODO: Call printFileContents with the command-line argument
-printFileContents("output.txt");
 const server = http.createServer((req, res) => {
+  printFileContents("output.txt");
   res.end("Hello World!");
 });
 
